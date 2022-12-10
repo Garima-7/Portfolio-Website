@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+#navbar a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+}
+#navbar a:active{
+    text-decoration: underline;
+    color:black;
+}
+
+#navbar{
+    position: absolute;
+    top: 0;
+    width:100%;
+    background-color: rgb(16, 188, 176);
+    display: flex;
+    justify-content: center;
+}
+
+#navbar a{
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5% 2%;
+    border-radius: 50%;
+    text-shadow: -1px 1px rgba(0, 0, 0, 0.464);
+}
+
+#home {
+    display: flex;
+    background-color:rgb(240, 95, 70);
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#home div{
+    padding: 20px;
+}
+
+.sub > p{
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.773),white,pink);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    font-size: 50px;
+    text-shadow: -2px 2px rgba(255, 255, 255, 0.793);
+    margin: 0;
+    color: black
+    
+}
+.sub{
+    height: 100%;
+}
+
+#Education table{
+    border:2px solid black;
+    padding: 15px;
+    margin: 20px;
+    background-image: linear-gradient(to bottom,black,gray);
+}
+
+#Education th{
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.601);
+    font-weight: bolder;
+}
+
+#Education td{
+    padding: 5px;
+    font-size: 18px;
+}
+
+#Skills #sk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#Skills #sk div{
+    background-color: red;
+    border-radius: 50%;
+    border:2px solid black;
+    padding:30px;
+    height: 30px;
+    
+}
+
+#Skills #sk .even{
+    position: relative;
+    animation-name: example_even;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#Skills #sk .odd{
+    position: relative;
+    animation-name: example_odd;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#achievements tr{
+    font-size: 20px;
+}
+@keyframes example_even {
+    from {position: relative; top:0px}
+    to {position: relative;top:100px}
+  }
+
+  @keyframes example_odd {
+    from {position: relative; top:100px}
+    to {position: relative;top:0px}
+  }
+  
+  input,textarea{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+  }
+
